@@ -4,7 +4,7 @@
 
 **I don't know. Just a new project to test my front-end skills after c++**
 
-*Also, the key feature is the **no** JS required.*
+*Also, the key feature is that **no** JS required.*
 *Seriously, JS is a menace to privacy, so everything is done with pure html/css.*
 
 >It is those who possess wisdom who are the greatest fools. History has shown us this -Okabe Rintaro
