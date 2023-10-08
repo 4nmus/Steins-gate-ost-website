@@ -9,4 +9,4 @@ def HomeView(request):
     songs = Song.objects.all()
     num = songs.count()
     context = {'forums': songs, 'count': num,}
-    return render(request, 'Main_Forum/Home.html', context)
+    return render(request, 'front/home.html', context)
