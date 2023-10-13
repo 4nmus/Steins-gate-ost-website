@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+body{
+    font-size: 16px;
+    background: white;
+    color: #000;
+}
+
+header {
+    width: 100%;
+    background: #F8F8F8;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+}
+
+header .all-header{
+    width: 60%;
+    margin: 0 20%;
+}
+
+@media (min-width: 1571px){
+    header .all-header{
+        width: 60%;
+        margin: 0 20%;
+    }
+}
+
+@media (max-width: 1570px) and (min-width: 1111px) {
+    header .all-header{
+        width: 80%;
+        margin-left:10%;
+    }
+}
+
+@media (max-width: 1110px) and (min-width: 921px){
+    header .all-header{
+        width: 95%;
+        margin-left: 2.5%;
+    }
+}
+
+@media (max-width: 920px){
+    header .all-header{
+        width: 90%;
+        margin-left: 5%;
+    }
+    header .all-header .header-main{
+    flex-direction: column;
+    }
+
+    header .all-header .header-main div,
+    header .all-header .header-main a,
+    header .all-header .header-main input
+    {
+        margin-top:20px;
+    }
+}
+
+header .all-header .lang{
+    text-align: right;
+    width: 100%;
+}
+
+header .all-header .lang a{
+    font-size: 14px;
+    color: #C4C4C4;
+    font-weight: 800;
+}
+
+header .all-header .lang a.active,
+header .all-header .lang a:hover{
+    border-bottom: 2px solid #000;
+    color: #000;
+    margin-left: 5px;
+}
+
+#kris-chan{
+    height: 50px;
+}
+
+header .all-header .header-main{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search{
+    /*margin-left: 20px;*/
+    border: 0px;
+    background: #ECECEC;
+    width: 360px;
+    height: 44px;
+    font-weight: 300px;
+    font-size: 12px;
+    text-indent: 20px;
+    outline: none;
+    /*margin-top: 5px;*/
+
+}
+
+
+@media (min-width: 921px){.auth{margin-left: 40%}}
+
+
+header .all-header .header-main a{
+
+    color: #000;
+    font-weight: 800;
+
+}
+
+header .all-header .header-main a:hover{
+    color: #ccc;
+}
+
+header .all-header .header-main .btn{
+    cursor: pointer;
+
+    width: 86px;
+
+    height: 40px;
+    font-weight: 800px;
+    border: 2px solid #000;
+    text-align: center;
+    line-height:40px;
+    /* line height should be equal to height! */
+}
+
+header .all-header .header-main .btn.reg{
+    width: 140px;
+}
+
+header .all-header .header-main .btn.reg,
+header .all-header .header-main .btn.auth:hover{
+    background: #000;
+    color: #fff;
+}
+
+header .all-header .header-main .btn.reg:hover{
+    background: #fff;
+    color: #000;
+}
+
+/* main part */
+
+main{
+    width: 100%;
+}
+
+main .section{
+    width: 60%;
+    margin: 50px 20%;
+}
+
+main .section h3{font-size: 24px;}
+
+main .section h3 span{
+    height: 2px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 40px;
+    margin-bottom: 7px;
+    width: 30px;
+    background: #000;
+}
+
+main .section img{
+    width: 100%;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .section .img-block{
+    width: 25%;
+    margin: 20px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+@media (max-width: 955px){
+    main .section .flex-container{
+    flex-direction: column;}
+
+    main .section .img-block{
+        width: 100%;
+    }
+
+    main .section .img-block:hover .button-play{opacity: 0!important;}
+}
+
+main .section .img-block h4{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+main .section .img-block p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+main .section .img-block:hover .button-play{opacity: 1;}
+
+main .section .img-block .button-play{
+    background-color: #000;
+    color: yellow;
+    padding: 25px;
+    position: absolute;
+    right: -30px;
+    bottom: 80px;
+    opacity: 0;
+    transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+footer{
+    width: 100%;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    font-weight: 300;
+}
