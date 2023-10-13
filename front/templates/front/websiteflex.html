@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>S;G OST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+</head>
+<body>
+    <header>
+      <div class="all-header">
+        <div class="lang">
+          <a href="#">en</a>
+          <a href="#" class="active">ru</a>
+        </div>
+        <div class="header-main">
+          <img id="kris-chan" src="kris.png" alt="Logo">
+          <input type="search" name="search" id="search" placeholder="Search">
+          <a href="#">Upload ost</a>
+          <div class="btn auth">Login</div>
+          <div class="btn reg">Register</div>
+
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="section">
+        <h3><span></span>Steins;gate original OST</h3>
+        <div class="flex-container">
+          {% block content1 %}
+          {% endblock %}
+        </div>
+      </div>
+      <div class="section">
+        <h3><span></span>Steins;gate original OST</h3>
+        <div class="flex-container">
+          {% block content2 %}
+          {% endblock %}
+
+        </div>
+      </div>
+      <div class="section">
+        <h3><span></span>Steins;gate original OST</h3>
+        <div class="flex-container">
+          {% block content3 %}
+          {% endblock %}
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Privacy Policy</p>
+    </footer>
+</body>
+</html>
